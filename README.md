@@ -13,4 +13,7 @@
 - JavaScript
 
 ## 在線演示
-[點擊這裡查看網站](https://YOUR_USERNAME.github.io/REPOSITORY_NAME) 
+[點擊這裡查看網站](https://richhsueh.github.io/egg-puff)
+
+## 本地運行
+1. 克隆倉庫
