@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雞蛋糕性格小測驗</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-screen" class="screen">
+            <h1>雞蛋糕性格小測驗</h1>
+            <p>想知道你是哪種雞蛋糕嗎？讓我們開始測驗吧！</p>
+            <button onclick="startQuiz()">開始測驗</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <h2 id="question"></h2>
+            <div id="options" class="options">
+                <!-- 選項會由JavaScript動態生成 -->
+            </div>
+            <div class="progress-indicator">
+                <span id="current-question">1</span> / <span id="total-questions">4</span>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2>測驗結果</h2>
+            <div id="result-content"></div>
+            <div class="share-buttons">
+                <button onclick="shareToFB()" class="share-btn facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </button>
+                <button onclick="shareToLine()" class="share-btn line">
+                    <i class="fab fa-line"></i> Line
+                </button>
+                <button onclick="shareToTwitter()" class="share-btn twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+            </div>
+            <div class="action-buttons">
+                <button onclick="restartQuiz()">重新測驗</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
