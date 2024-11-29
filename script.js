@@ -39,7 +39,7 @@ const quizData = {
             type: "熱情開朗的你",
             description: "你是個熱情且喜歡與人交流的人，善於帶動氣氛，總能為周圍的人帶來溫暖與歡樂！",
             recommendation: {
-                flavor: "巧克力口味雞蛋糕",
+                flavor: "巧克力口味AIA雞蛋糕",
                 reason: "甜蜜的滋味正如你的個性一樣溫暖動人。"
             }
         },
@@ -47,7 +47,7 @@ const quizData = {
             type: "獨特沉穩的你",
             description: "你是個冷靜且注重內在的人，有獨特的思考方式，總是能在平凡中發現不平凡！",
             recommendation: {
-                flavor: "起司口味雞蛋糕",
+                flavor: "起司口味AIA雞蛋糕",
                 reason: "層次豐富的口感正如你深邃的內在一樣令人回味。"
             }
         },
@@ -55,7 +55,7 @@ const quizData = {
             type: "純真細膩的你",
             description: "你是個真誠而純粹的人，懂得欣賞生活中的小細節，能在簡單中體會幸福！",
             recommendation: {
-                flavor: "原味雞蛋糕（含葡萄乾）",
+                flavor: "原味AIA雞蛋糕（含葡萄乾）",
                 reason: "純粹的美好中帶著驚喜，就像你一樣令人感到溫暖。"
             }
         }
@@ -176,6 +176,6 @@ function getShareText() {
     const personalityDesc = document.querySelector('.personality-section p').textContent;
     const recommendationFlavor = document.querySelector('.recommendation-flavor').textContent;
     const recommendationReason = document.querySelector('.recommendation-reason').textContent;
-    return `【雞蛋糕性格小測驗】\n我是${resultType}\n${personalityDesc}\n${recommendationFlavor}\n${recommendationReason}\n來測測看你是哪種類型！`;
+    return `【AIA雞蛋糕性格測驗】\n我是${resultType}\n${personalityDesc}\n${recommendationFlavor}\n${recommendationReason}\n來測測看你是哪種類型！`;
 }
  
