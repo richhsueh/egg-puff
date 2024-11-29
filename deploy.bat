@@ -7,10 +7,6 @@ git status
 echo 🔄 同步遠程更新...
 git pull
 
-echo 🔍 檢查並清理衝突標記...
-powershell -Command "(Get-Content index.html) | ForEach-Object { $_ -replace '<<<<<<< HEAD[\r\n].*?=======[\r\n].*?>>>>>>> .*?[\r\n]', '' } | Set-Content index.html"
-powershell -Command "(Get-Content README.md) | ForEach-Object { $_ -replace '<<<<<<< HEAD[\r\n].*?=======[\r\n].*?>>>>>>> .*?[\r\n]', '' } | Set-Content README.md"
-
 set /p "commit_message=✏️ 請輸入提交信息 (直接按 Enter 使用默認信息 'Update files'): "
 
 if "%commit_message%"=="" (
